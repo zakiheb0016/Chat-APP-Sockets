@@ -10,7 +10,7 @@ int main(){
     struct sockaddr_in informations;
     informations.sin_family=AF_INET;
     informations.sin_port=htons(6666);
-    informations.sin_addr.s_addr=inet_addr("105.107.43.179");
+    informations.sin_addr.s_addr=inet_addr("127.0.0.1");
     int socketID = socket(AF_INET,SOCK_STREAM,0);
     if (socketID==-1){
         perror("socket");
